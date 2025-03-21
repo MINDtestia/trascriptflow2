@@ -14,7 +14,7 @@ const routes = [
   {
     path: '/transcribe',
     name: 'transcribe',
-    component: () => import('../views/TranscribeView.vue')
+    component: () => import('../views/TranscriptionView.vue')  
   },
   {
     path: '/text-to-audio',

@@ -1,0 +1,22 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "dashboard": "Tableau de bord",
+    "transcribe": "Transcrire",
+    "textToAudio": "Texte vers Audio",
+    "youtube": "YouTube",
+    "video": "Vidéo",
+    "settings": "Paramètres",
+    "apiKeys": "Clés API",
+    "profile": "Profil"
+  },
+  "common": {
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "success": "Opération réussie"
+  }
+} 

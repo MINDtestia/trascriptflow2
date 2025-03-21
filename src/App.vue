@@ -7,42 +7,46 @@
       <div class="navbar-menu">
         <router-link to="/" class="nav-item">
           <i class="fas fa-home"></i>
-          <span>Accueil</span>
+          <span>{{ $t('nav.home') }}</span>
         </router-link>
         <router-link to="/dashboard" class="nav-item">
           <i class="fas fa-chart-line"></i>
-          <span>Tableau de bord</span>
+          <span>{{ $t('nav.dashboard') }}</span>
         </router-link>
         <router-link to="/transcribe" class="nav-item">
           <i class="fas fa-file-audio"></i>
-          <span>Transcription</span>
+          <span>{{ $t('nav.transcribe') }}</span>
         </router-link>
         <router-link to="/text-to-audio" class="nav-item">
           <i class="fas fa-volume-up"></i>
-          <span>Texte vers Audio</span>
+          <span>{{ $t('nav.textToAudio') }}</span>
         </router-link>
         <router-link to="/youtube" class="nav-item">
           <i class="fab fa-youtube"></i>
-          <span>YouTube</span>
+          <span>{{ $t('nav.youtube') }}</span>
         </router-link>
         <router-link to="/video" class="nav-item">
           <i class="fas fa-video"></i>
-          <span>Vidéo</span>
+          <span>{{ $t('nav.video') }}</span>
         </router-link>
         <router-link to="/settings" class="nav-item">
           <i class="fas fa-cog"></i>
-          <span>Paramètres</span>
+          <span>{{ $t('nav.settings') }}</span>
         </router-link>
         <router-link to="/api-keys" class="nav-item">
           <i class="fas fa-key"></i>
-          <span>Clés API</span>
+          <span>{{ $t('nav.apiKeys') }}</span>
         </router-link>
         <router-link to="/profile" class="nav-item">
           <i class="fas fa-user"></i>
-          <span>Profil</span>
+          <span>{{ $t('nav.profile') }}</span>
         </router-link>
       </div>
       <div class="navbar-end">
+        <select v-model="$i18n.locale" class="language-selector">
+          <option value="fr">🇫🇷 Français</option>
+          <option value="en">🇬🇧 English</option>
+        </select>
         <button class="theme-toggle" @click="toggleTheme">
           <i :class="isDarkMode ? 'fas fa-sun' : 'fas fa-moon'"></i>
         </button>
@@ -178,6 +182,9 @@ export default {
 
 .navbar-end {
   margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .theme-toggle {
@@ -275,5 +282,25 @@ body {
     margin-left: 0;
     padding: 1rem;
   }
+}
+
+.language-selector {
+  padding: 0.5rem;
+  margin-right: 1rem;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.language-selector:hover {
+  border-color: var(--accent-primary);
+}
+
+.language-selector option {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
 }
 </style> 

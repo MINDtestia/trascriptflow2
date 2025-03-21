@@ -1,0 +1,22 @@
+{
+  "nav": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "transcribe": "Transcribe",
+    "textToAudio": "Text to Audio",
+    "youtube": "YouTube",
+    "video": "Video",
+    "settings": "Settings",
+    "apiKeys": "API Keys",
+    "profile": "Profile"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Operation successful"
+  }
+} 
